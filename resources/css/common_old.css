@@ -1,0 +1,61 @@
+@charset "utf-8";
+* { margin:0; padding:0; list-style:none; text-decoration:none;}
+.clearfix::after { content:""; display:block; clear:both; }
+iframe { z-index:99999; }
+body{overflow-x: hidden;}
+div.main {position:relative;}
+
+/** Noto Sans KR (korean) http://www.google.com/fonts/earlyaccess **/
+/*
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+
+@font-face {
+   font-family: 'Noto Sans KR';
+   font-style: normal;
+   font-weight: 400;
+   src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+ }
+*/
+ /*
+ @font-face { font-family: 'KHNPHU'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KHNPHU.woff') format('woff'); font-weight: normal; font-style: normal; } 한돋움서체 */
+
+@font-face { font-family: 'Arita-dotum-Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff'); font-weight: normal; font-style: normal; } 
+
+
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }/* 잘난체 */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+ body {font-family:'Arita-dotum-Medium','Noto Sans KR',"돋움", dotum, sans-serif; line-height: 1.5em; color:#323232; font-size:15px; font-weight:300}
+ select, input, textarea, button{ font-family:'Noto Sans KR','Nanum Gothic',"돋움", dotum, sans-serif; font-size:inherit; vertical-align:middle;}
+ input[type="submit"], input[type="reset"]{}
+ input[type="text"], input[type="password"], select{border:1px solid #d2d2d2}
+ img{vertical-align:top}
+ table { border-collapse: collapse; border-spacing: 0}
+ ul, ol{list-style: none}
+ a {color: #323232; text-decoration: none;}
+ address{font-style:normal}
+ caption{text-indent:-9999px; height:0}
+ button { outline: none; border: 0;}
+ 
+ 
+ 
+.inner { position:relative; width:1200px; margin:0 auto; }
+.w100 { width:100% !important;}

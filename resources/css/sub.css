@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*서브 레이아웃 공통*/
+body { overflow-x:hidden;}
+.cont01 { position:relative; float:left; width:100%; height:750px;  }
+#header {position:relative; margin-top:60px; z-index:50; }
+#header .logo_box { position:absolute; left:55px; }
+#header .logo_box #logo {}
+#header .logo_box #logo a {width:60px; height:56px; display:block; background:url("../images/w_logo.png") no-repeat; text-indent:-99999px; }
+#header .top_menu { position:absolute; right:55px;}
+#header .top_menu li { margin-left:18px; display:inline-block;}
+#header .top_menu li:first-child {}
+#header .top_menu li a { color:#fff; font-size:18px;}
+#header .top_menu li a:hover { text-decoration:underline;}
+
+
+
+
+h3 { letter-spacing:8px; font-size:28px; text-align:center; padding-top:70px;}
+h4 { font-size:23px; color:#132882; font-weight:bold; margin-top:60px;}
+.basic { margin-top:20px;}
+ul.basic {margin-top:30px; font-size:16px; line-height:180%;}
+.ul-info strong { width:120px; display:inline-block;}
+
+.c_fff { color:#fff !important;}
+.c_333 { color:#333 !important;}
+
+.fleft { float:left;}
+.fright { float:right;}
+
+span.next { display:block;}
+.photo1,.photo2 { margin-top:30px;}
+.photo2 li { float:left; margin-left:2%; width: 49%; }
+.photo2 li:first-child { margin-left:0}
+.line_dot { display:block; position: relative; z-index: 1; border-bottom:1px dashed #ddd; width:100%; padding-top:25px;}
+
+.mal0 { margin-left:0 !important;}
+.mar0 { margin-right:0 !important;}
+.mat0 { margin-top:0 !important;}
+.mab0 { margin-bottom:0 !important;}
+.pad60 { padding:60px 0;}
+
+.c_box{ background: url("../images/sub/box_pattern.gif"); display:inline-block; width:100%; margin-top: 25px;}
+.c_box .in_box{background: #fff; margin: 6px; padding: 18px 20px;}
+.c_box .in_box h4{margin-top:18px; margin-bottom: 5px; color: #1f2f46; font-size: 17px; background: none; padding: 0;}
+.c_box .in_box h3{margin-top:6px; margin-bottom: 5px; color: #1f2f46; font-size: 17px; background: none; padding: 0;}
+.c_box p.basic, .c_box2 ul.basic, .c_box2 ol.basic { margin-top:0;}
+.c_box .in_box h4.c0, .in_box h3.c0{ margin-top:0px;}
+.c_box p.basic, .c_box ul.basic, .c_box ol.basic { margin-top:0;}
+
+
+
