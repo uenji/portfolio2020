@@ -39,20 +39,12 @@
 <body>
 
 <div id="wrap">
-    <!-- header s -->
-    <header class="header">
-        <h1 class="logo"><a href="/">웹 퍼블리셔 이은지 포트폴리오</a></h1>
-        <nav class="gnb">
-            <ul>
-                <li><a href="#none" class="page-scroll">Home</a></li>
-                <li><a href="#none" class="page-scroll">Projects</a></li>
-                <li><a href="#none" class="page-scroll">About us</a></li>
-                <li><a href="#none" class="page-scroll">Contact us</a></li>
-            </ul>
-        </nav>
-        <button class="hammenu"><span class="txt">전체메뉴</span><i class="first"></i><i class="second"></i><i class="last"></i></button>
-    </header>
-    <!-- header e -->
+    <script>
+    $(document).ready(function(){
+        $("#header").load("/portfolio2020/inc/header_index.html");
+    });
+    </script>
+
     <div id="container">
         <!-- main visial s -->
         <div class="main_vis">
@@ -60,13 +52,13 @@
             <div class="swiper-container main_swiper">
                 <div class="swiper-wrapper">
                     <div class="vis1 swiper-slide">
-                        <div class="vis_bg"><div class="img" data-swiper-parallax-x="60%"></div></div>
+                        <div class="vis_bg" data-swiper-parallax-x="60%"></div>
                     </div>
                     <div class="vis2 swiper-slide">
-                        <div class="vis_bg"><div class="img" data-swiper-parallax-x="60%"></div></div>
+                        <div class="vis_bg" data-swiper-parallax-x="60%"></div>
                     </div>
                     <div class="vis3 swiper-slide">
-                        <div class="vis_bg"><div class="img" data-swiper-parallax-x="60%"></div></div>
+                        <div class="vis_bg" data-swiper-parallax-x="60%"></div>
                     </div>
                 </div>
             </div>
