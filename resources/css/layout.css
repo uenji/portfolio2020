@@ -6,9 +6,9 @@
 .header .logo {display:inline-block;}
 .header .logo a { text-indent: -99999px; display: block; background:url("/portfolio2020/resources/img/w_logo.png") no-repeat; background-size: cover; width:60px; height:56px;}
 
-.header > .gnb {}
-.header > .gnb ul {display: inline-block;}
-.header > .gnb ul li {font-size:20px; margin-left:60px;}
+.header > .gnb {float:right;}
+.header > .gnb ul {}
+.header > .gnb ul li {display: inline-block; font-size:20px; margin-left:60px;}
 .header > .gnb ul li a { font-weight: 600; font-family: 'play';}
 
 

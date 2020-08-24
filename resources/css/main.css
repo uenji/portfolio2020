@@ -8,7 +8,7 @@
 .main_swiper .swiper-slide { width: 100%; height:760px; background: url('/portfolio2020/resources/img/main/main_vis.jpg') no-repeat center; background-size: cover;}
 .main_swiper .vis2 { background: url('/portfolio2020/resources/img/main/main_vis2.jpg') no-repeat center; background-size: cover;}
 .main_vis .vis_txt { left:15%; position:absolute; bottom:125px; z-index:1; }
-.main_vis .vis_txt .tit { font-family: 'play'; font-weight: 600; font-size: 60px; color: #fff; font-style: italic; text-decoration: underline;}
+.main_vis .vis_txt .tit { letter-spacing: -1px; font-family: 'play'; font-weight: 600; font-size: 55px; color: #fff; font-style: italic; text-decoration: underline;}
 .main_vis .vis_txt .txt { font-size: 20px; margin: 70px 0 20px; color: #fff;}
 .main_vis .vis_txt .name { color:#fff; font-size: 20px;}
 
