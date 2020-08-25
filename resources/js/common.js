@@ -57,8 +57,49 @@ $(document).ready(function(){
 	}).resize();
 	
 	
-
+	//header include
 	$("#header").load("inc/header_index.html");
+
+	
+    //main cont swiper
+    var mySwiper = new Swiper('.main_swiper', {
+       
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        simulateTouch:false, // touch 방지
+        speed: 1000,
+        fadeEffect: {
+            crossFade: true
+        },
+        parallax: true,
+        effect: 'slide', // 페이드 효과 사용
+        loop: true, // 무한 반복
+
+        grabCursor: true,
+        paginationClickable: true,
+        parallax: true,
+        mousewheelControl: 1,
+        pagination: {
+            el: '.swiper-pagination',
+			type: 'fraction',
+            clickable: true,
+            renderBullet: function(index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+        },
+        navigation: { // 네비게이션 설정
+            nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+            prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+        },
+
+
+    });
+	
+
+
+
 });
 
 
