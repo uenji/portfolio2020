@@ -16,10 +16,12 @@
 .header > .gnb ul li a { transition: .3s ease; font-weight: 600; font-family: 'play';}
 .header > .gnb ul li a:hover {color:#e51b23;}
 
-.hammenu { position: absolute; width: 27px; right: 5vh; display: inline-block;}
-.hammenu .txt {font-size: 0;}
-.hammenu i { width: 100%; height: 2px; background: #000;}
-
+.hammenu {font-size: 0; line-height: 100%; position: absolute; width: 27px; right: 5vh; display: inline-block; background: none; border: none;}
+.hammenu .txt {font-size: 0; position: absolute;}
+.hammenu i { transition: .3s ease; display: inline-block; width: 100%; height: 2px; background: #000; margin-top: 7px;}
+.hammenu i.first { margin-top: 0; float: right; width: 20px;}
+.hammenu i.last {float: left; width: 20px;}
+.hammenu:hover i { width: 100%;}
 
 @media screen and (max-width:1100px){
 
