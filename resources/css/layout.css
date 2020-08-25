@@ -4,7 +4,7 @@
 /*header*/
 .header { position: absolute; left:0; width: 100%; transition:top .8s ease-in-out;  height: 80px; z-index:3;}
 .header .logo {display:inline-block;}
-.header .logo a { text-indent: -99999px; display: block; background:url("/portfolio2020/resources/img/w_logo.png") no-repeat; background-size: cover; width:60px; height:56px;}
+.header .logo a { text-indent: -99999px; display: block; background:url("../../resources/img/w_logo.png") no-repeat; background-size: cover; width:60px; height:56px;}
 
 .header > .gnb {float:right;}
 .header > .gnb ul {}

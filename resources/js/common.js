@@ -58,6 +58,7 @@ $(document).ready(function(){
 	
 	
 
+	$("#header").load("inc/header_index.html");
 });
 
 
