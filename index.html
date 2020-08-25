@@ -39,11 +39,35 @@
 <body>
 
 <div id="wrap">
-    <header class="header" id="header"></header>
+    <header class="header" id="header">
+        <!-- header s -->
+        <h1 class="logo"><a href="/">웹 퍼블리셔 이은지 포트폴리오</a></h1>
+        <nav class="gnb">
+            <ul>
+                <li><a href="#home" class="page-scroll">Home</a></li>
+                <li><a href="#none" class="page-scroll">Projects</a></li>
+                <li><a href="#none" class="page-scroll">About us</a></li>
+                <li><a href="#none" class="page-scroll">Contact us</a></li>
+            </ul>
+        </nav>
+        <button class="hammenu"><span class="txt">전체메뉴</span><i class="first"></i><i class="second"></i><i class="last"></i></button>
+        <div class="mobile_menu">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#none" class="page-scroll">Home</a></li>
+                    <li><a href="#none" class="page-scroll">Projects</a></li>
+                    <li><a href="#none" class="page-scroll">About us</a></li>
+                    <li><a href="#none" class="page-scroll">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- header e -->
+
+    </header>
 
     <div id="container">
         <!-- main visial s -->
-        <div class="main_vis">
+        <div class="main_vis" id="home">
             <div class="left_bg"></div>
             <div class="swiper-container main_swiper">
                 <div class="swiper-wrapper">
@@ -66,7 +90,7 @@
                     <button class="slide_btn swiper-button-next">다음</button>
                 </div>
             </div>
-            <span class="scrolldown">SCROLL DOWN</span>
+            <p class="scrolldown"><span class="txt">SCROLL DOWN</span></p>
         </div>
         <!-- main visial e -->
 

@@ -21,7 +21,17 @@
 .main_vis .slide_btn {transition:.3s ease; display: inline-block; position: relative; text-indent: -99999px; border: none; background: none; border: 2px solid rgba(255,255,255,.5); border-right:0; border-bottom: 0; width: 35px; height: 35px; transform: rotate(-45deg); outline:none; font-size: 0;}
 .main_vis .slide_btn.swiper-button-next { border: 2px solid rgba(255,255,255,.5); border-left:0; border-top: 0; margin-left: 30px;}
 .main_vis .slide_btn:hover { border-color: #fff;}
+.main_vis .scrolldown { position: absolute; right: 0; z-index: 1; bottom: 57px; width: 340px; line-height:100%;  transform: rotate(90deg) translate3d(-50%, -50%, 0); }
+.main_vis .scrolldown::before { transition: .3s ease; content:''; display: inline-block; width: 100%; right: 0; height: 1px; background: #000; position: absolute; }
+.main_vis .scrolldown::after {content: ''; position: absolute;top:-11px; right: -3px; display: inline-block; height: 1px; width: 30px; background:#000; transform:rotate(45deg); }
+.main_vis .scrolldown span {animation: scrollDown 1.5s ease infinite; position: relative; display: inline-block; font-family: 'play'; transition: .3s ease; font-size: 13px; letter-spacing: 3px; transform: translateX(40px) translateY(-50%); padding:0 14px; font-weight: 600; background: #fff; }
+.main_vis:hover .scrolldown::before {width: 110%;}
 
+@keyframes scrollDown {
+    0% { transform: translateX(40px) translateY(-50%);}
+    70% { transform: translateX(50%) translateY(-50%);}
+    100%{transform: translateX(40px) translateY(-50%);}
+}
 
 
 @keyframes zoomIn00 {

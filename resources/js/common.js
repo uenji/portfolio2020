@@ -95,7 +95,33 @@ $(document).ready(function(){
         },
 
 
-    });
+	});
+	
+	// scroll event
+	$(window).scroll(function() {
+		var hdHeight = $('.header').height();
+		var mainHeight = $('.main_vis').height();
+		var windowTop = $(window).scrollTop();
+		// header scroll
+		if(windowTop >= hdHeight) {
+			$('.header').addClass('scroll');
+		} else {
+			$('.header').removeClass('scroll');
+		}
+
+		// main_vis scroll
+		if(windowTop >= mainHeight) {
+			$('.header').addClass('black');
+		} else {
+			$('.header').removeClass('black');
+		}
+
+
+	});
+
+	
+	
+
 	
 
 
