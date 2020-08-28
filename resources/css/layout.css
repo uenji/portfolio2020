@@ -2,7 +2,7 @@
 /*layout*/
 
 /*header*/
-.header { position: fixed; left:0; width: 100%; transition:top .8s ease-in-out; top:80px;  z-index:3; box-sizing: border-box; padding: 0 5vh;}
+.header { position: fixed; left:0; width: 100%; transition:top .8s ease-in-out; top:80px;  z-index:3; box-sizing: border-box; padding: 0 5vw;}
 .header.scroll { top:30px;}
 .header .logo {display:inline-block;}
 .header .logo a { text-indent: -99999px; display: block; background:url("../../resources/img/w_logo.png") no-repeat; background-size: cover; width:60px; height:56px;}

@@ -121,6 +121,35 @@ $(document).ready(function(){
 
 	
 	
+//project swiper
+var galleryTop = new Swiper('.project_swiper', {
+	spaceBetween: 40,
+	slidesPerView: 3,
+	loop:true,
+	draggable: true,
+	navigation: {
+		nextEl: '.sec_perf .swiper-button-next',
+		prevEl: '.sec_perf .swiper-button-prev',
+	},
+	thumbs: {
+		swiper: galleryThumbs,
+	},
+});
+var galleryThumbs = new Swiper('.project_thumbs', {
+	spaceBetween: 10,
+	slidesPerView: 1,
+	loop: true,
+	effect: 'fade',
+	freeMode: true,
+	draggable: false,
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+	touchRatio: 0,
+});
+
+
+
+	
 
 	
 
