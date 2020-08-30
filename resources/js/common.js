@@ -123,7 +123,7 @@ $(document).ready(function(){
 	
 //project swiper
 var galleryTop = new Swiper('.project_swiper', {
-	spaceBetween: 40,
+	spaceBetween: 20,
 	slidesPerView: 3,
 	loop:true,
 	draggable: true,

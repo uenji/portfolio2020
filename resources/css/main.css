@@ -27,16 +27,16 @@
 .main_vis .scrolldown span {animation: scrollDown 1.5s ease infinite; position: relative; display: inline-block; font-family: 'play'; transition: .3s ease; font-size: 13px; letter-spacing: 3px; transform: translateX(40px) translateY(-50%); padding:0 14px; font-weight: 600; background: #fff; }
 .main_vis:hover .scrolldown::before {width: 110%;}
 
-.projects { padding-top:180px; background: #f9f9f9; position: relative;}
+.projects { overflow: hidden; padding-top:180px; background: #f9f9f9; position: relative;}
 .projects .wrap_tit { font-size: 65px; font-family: 'play'; font-weight: 600;margin-left:10vw; display:inline-block;}
 .projects .left_tit {font-size: 13px; font-family: 'play'; color:#ddd; letter-spacing: 5px; position: absolute; left: 3vw; transform:translate3d(-50%, -50%, 0) rotate(-90deg); top: 50%; } 
 
-.projects_slider_wrap { position: absolute; right: -150px; width: 100%; max-width: 1200px;}
+.projects_slider_wrap {margin-top: 75px; float:right; margin-right: -150px; width: 100%; max-width: 1420px;}
 .project_swiper { overflow: hidden;}
 .project_swiper .swiper-slide {width: 30%;}
-.project_swiper .swiper-slide .project_img { overflow: hidden; display: block;}
-.project_swiper .swiper-slide .project_img img {max-width: 100%;}
-
+.project_swiper .swiper-slide .project_img {height:287px; overflow: hidden; display: block;}
+.project_swiper .swiper-slide .project_img img {max-width: 100%; transition: 2s ease-in-out;}
+.project_swiper .swiper-slide:hover .project_img img { transform: translateY(-100%);}
 
 
 @keyframes scrollDown {
