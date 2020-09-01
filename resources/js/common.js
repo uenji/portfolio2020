@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	
 	/* 부드럽게 스크롤 */
  	$('a.page-scroll').bind('click', function(event) {
 		event.preventDefault();
@@ -120,39 +122,51 @@ $(document).ready(function(){
 	});
 
 	
+		
+	//project swiper
+	var galleryThumbs = new Swiper('.project_thumbs', {
+		spaceBetween: 10,
+		slidesPerView: 1,
+		loop: true,
+		effect: 'fade',
+		freeMode: true,
+		draggable: false,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		touchRatio: 0,
+	});
 	
-//project swiper
-var galleryTop = new Swiper('.project_swiper', {
-	spaceBetween: 20,
-	slidesPerView: 3,
-	loop:true,
-	draggable: true,
-	navigation: {
-		nextEl: '.sec_perf .swiper-button-next',
-		prevEl: '.sec_perf .swiper-button-prev',
-	},
-	thumbs: {
-		swiper: galleryThumbs,
-	},
-});
-var galleryThumbs = new Swiper('.project_thumbs', {
-	spaceBetween: 10,
-	slidesPerView: 1,
-	loop: true,
-	effect: 'fade',
-	freeMode: true,
-	draggable: false,
-	watchSlidesVisibility: true,
-	watchSlidesProgress: true,
-	touchRatio: 0,
-});
+	var galleryTop = new Swiper('.project_swiper', {
+		spaceBetween: 20,
+		slidesPerView: 3,
+		loop:true,
+		draggable: true,
+		navigation: {
+			nextEl: '.sec_perf .swiper-button-next',
+			prevEl: '.sec_perf .swiper-button-prev',
+		},
+		thumbs: {
+			swiper: galleryThumbs,
+		},
+	});
 
-
-
-	
 
 	
 
+	 
+	$('.project_img').mouseover(function() {
+		var thumbsHeight = $(this).height();
+		var imgHeight = $(this).children().height();
+		var hoverHeight = imgHeight - thumbsHeight;
+
+		$(this).children('img').css('transform', 'translateY(-' + hoverHeight +'px)');
+	});
+
+	$('.project_img').mouseout(function() {
+		$(this).children('img').css('transform', 'none');
+
+	});
+	
 
 
 });

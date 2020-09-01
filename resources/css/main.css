@@ -36,8 +36,11 @@
 .project_swiper .swiper-slide {width: 30%;}
 .project_swiper .swiper-slide .project_img {height:287px; overflow: hidden; display: block;}
 .project_swiper .swiper-slide .project_img img {max-width: 100%; transition: 2s ease-in-out;}
-.project_swiper .swiper-slide:hover .project_img img { transform: translateY(-100%);}
-
+.project_thumbs {}
+.project_thumbs .swiper-slide { opacity:0 !important;padding: 40px 60px; background:#fff;}
+.project_thumbs .swiper-slide.swiper-slide-active { opacity: 1 !important;}
+.project_thumbs .swiper-slide .thumbs_box {background:#fff;}
+.project_thumbs .swiper-slide .tit {font-size:20px; font-weight: 500;}
 
 @keyframes scrollDown {
     0% { transform: translateX(40px) translateY(-50%);}
